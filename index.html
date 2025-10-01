@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .video-container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .description {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #cccccc;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+        }
+
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .description {
+                font-size: 0.8rem;
+            }
+            
+            video {
+                border-radius: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .description {
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enfants Riches Déprimés
+            FW16</h1>
+        
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="IMG_7353.MP4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+        
+        <div class="description">
+            <p>Andrew Piatnytskyi AUB 2025</p>
+        </div>
+    </div>
+</body>
+</html>
